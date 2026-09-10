@@ -204,7 +204,7 @@ export default function Contact() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="e.g. Alex Johnson"
+                      placeholder="Enter your name"
                       className={`w-full px-4 py-3 rounded-xl border bg-white dark:bg-slate-900/90 text-slate-900 dark:text-white placeholder-slate-400 transition-all focus:outline-none focus:ring-2 ${
                         errors.name
                           ? 'border-rose-500 focus:ring-rose-500/20'
@@ -233,7 +233,7 @@ export default function Contact() {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="e.g. alex@example.com"
+                      placeholder="Enter your email"
                       className={`w-full px-4 py-3 rounded-xl border bg-white dark:bg-slate-900/90 text-slate-900 dark:text-white placeholder-slate-400 transition-all focus:outline-none focus:ring-2 ${
                         errors.email
                           ? 'border-rose-500 focus:ring-rose-500/20'
