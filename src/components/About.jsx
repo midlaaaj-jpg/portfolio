@@ -83,24 +83,21 @@ export default function About() {
           {/* Narrative Content */}
           <div className="lg:col-span-7 order-1 lg:order-2 space-y-5">
             <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
-              Hi there! I'm <span className="text-indigo-600 dark:text-cyan-400">{personalInfo.name}</span>
+              Passionate About Clean Code & <span className="text-indigo-600 dark:text-cyan-400">Continuous Growth</span>
             </h3>
             
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-base sm:text-lg">
-              I am an aspiring full-stack developer who has completed my frontend learning with technologies like 
+              Having thoroughly mastered the frontend foundations in 
               <strong className="text-slate-900 dark:text-white font-semibold"> HTML5, CSS3, JavaScript, React, </strong> 
-              and <strong className="text-slate-900 dark:text-white font-semibold">Tailwind CSS</strong>.
+              and <strong className="text-slate-900 dark:text-white font-semibold">Tailwind CSS</strong>, I specialize in crafting clean, accessible, and high-performance user interfaces.
             </p>
 
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-base sm:text-lg">
-              With a solid frontend foundation in place, I am actively continuing toward full-stack development, 
-              focusing on expanding my programming depth, problem-solving skills, and architectural understanding. 
-              I enjoy turning complex wireframes into intuitive, responsive, and performant web interfaces.
+              I am actively expanding my skillset toward full-stack architecture—deepening my understanding of backend systems, RESTful APIs, and database fundamentals. I take pride in writing well-structured, maintainable code and solving complex problems with elegance.
             </p>
 
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-base sm:text-lg">
-              As an entry-level candidate, I bring exceptional curiosity, high attention to detail, and a relentless 
-              drive to learn alongside experienced engineering teams.
+              As an entry-level candidate, I bring strong dedication, a fast learning curve, and a proactive mindset ready to contribute to real-world software engineering teams.
             </p>
 
             <div className="pt-2 flex flex-wrap gap-3">

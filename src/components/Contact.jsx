@@ -297,6 +297,11 @@ export default function Contact() {
             </div>
           </div>
         </div>
+
+        {/* Minimal Bottom Copyright */}
+        <div className="mt-20 pt-8 border-t border-slate-200/60 dark:border-slate-800/60 text-center text-xs text-slate-500 dark:text-slate-400">
+          <p>© {new Date().getFullYear()} {personalInfo.name}. All rights reserved.</p>
+        </div>
       </div>
     </section>
   )
