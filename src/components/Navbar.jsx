@@ -88,6 +88,7 @@ export default function Navbar({ isDark, toggleTheme }) {
         <div className="flex items-center gap-2.5 sm:gap-3">
           {/* Dark/Light Mode Toggle */}
           <button
+            id="theme-toggle"
             onClick={toggleTheme}
             type="button"
             className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/80 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-cyan-300 hover:border-indigo-300 dark:hover:border-slate-700 shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-indigo-500/50"
