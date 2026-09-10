@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { ArrowRight, Mail, FolderGit2, Send } from 'lucide-react'
 import GithubIcon from './GithubIcon'
+import InstagramIcon from './InstagramIcon'
 import { personalInfo, typingRoles } from '../data/portfolioData'
 
 
@@ -121,6 +122,20 @@ export default function Hero() {
             </div>
             <span className="hidden sm:inline">{personalInfo.email}</span>
             <span className="sm:hidden">Email</span>
+          </a>
+
+          <a
+            href={personalInfo.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-pink-600 dark:hover:text-pink-400 transition-colors"
+            title="Muhammed Midlaj Instagram Profile"
+          >
+            <div className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700">
+              <InstagramIcon className="w-4 h-4" />
+            </div>
+            <span className="hidden sm:inline">@{personalInfo.instagramUsername}</span>
+            <span className="sm:hidden">Instagram</span>
           </a>
         </div>
       </div>

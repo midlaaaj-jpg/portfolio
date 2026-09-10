@@ -14,6 +14,8 @@ export const personalInfo = {
   // Update this with your exact GitHub profile URL
   githubUsername: "midlaaaj-jpg",
   githubUrl: "https://github.com/midlaaaj-jpg",
+  instagramUsername: "mi_dlaaj",
+  instagramUrl: "https://www.instagram.com/mi_dlaaj?stkn=MWMyeWp2aXpocGRheQ==",
   status: "Open to Entry-Level & Junior Roles",
   location: "Kerala, India", // You can customize your location
   bio: "Aspiring Full Stack Developer who has completed foundational and modern frontend learning and is actively expanding expertise in full-stack architecture, backend systems, and scalable web engineering.",

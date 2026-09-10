@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Mail, Send, Check, Copy, AlertCircle, MessageSquare } from 'lucide-react'
 import GithubIcon from './GithubIcon'
+import InstagramIcon from './InstagramIcon'
 import { personalInfo } from '../data/portfolioData'
 
 
@@ -149,6 +150,30 @@ export default function Contact() {
 
                 <a
                   href={personalInfo.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 shadow-sm transition-colors"
+                >
+                  Visit
+                </a>
+              </div>
+
+              {/* Instagram Card */}
+              <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/90 border border-slate-200/80 dark:border-slate-800 flex items-center justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  <div className="p-2.5 rounded-lg bg-pink-50 dark:bg-pink-950/60 text-pink-600 dark:text-pink-400 flex-shrink-0">
+                    <InstagramIcon className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">Instagram</p>
+                    <p className="text-sm font-semibold text-slate-900 dark:text-white">
+                      @{personalInfo.instagramUsername}
+                    </p>
+                  </div>
+                </div>
+
+                <a
+                  href={personalInfo.instagramUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 shadow-sm transition-colors"
