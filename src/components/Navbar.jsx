@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-import { Sun, Moon, Menu, X, Terminal } from 'lucide-react'
+import { Sun, Moon, Menu, X } from 'lucide-react'
+import profileImg from '../assets/profile.jpg'
 import { personalInfo, navLinks } from '../data/portfolioData'
 
 
@@ -42,14 +43,19 @@ export default function Navbar({ isDark, toggleTheme }) {
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        {/* Brand Logo */}
+        {/* Brand / Profile Avatar & Name */}
         <a
           href="#home"
-          className="group flex items-center gap-2.5 font-bold text-xl sm:text-2xl tracking-tight text-slate-900 dark:text-white transition-transform hover:scale-[1.02]"
+          className="group flex items-center gap-3 font-bold text-xl sm:text-2xl tracking-tight text-slate-900 dark:text-white transition-transform hover:scale-[1.02]"
           aria-label="Midlaj Portfolio Home"
         >
-          <div className="h-9 w-9 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-cyan-400 flex items-center justify-center text-white shadow-md shadow-indigo-500/25 group-hover:shadow-indigo-500/40 transition-all">
-            <Terminal className="w-5 h-5 transition-transform group-hover:rotate-6" />
+          {/* Profile Picture */}
+          <div className="relative h-10 w-10 sm:h-11 sm:w-11 rounded-full p-[2px] bg-gradient-to-tr from-indigo-600 via-purple-500 to-cyan-400 shadow-md shadow-indigo-500/25 group-hover:shadow-indigo-500/40 transition-all flex-shrink-0">
+            <img
+              src={profileImg}
+              alt={personalInfo.name}
+              className="h-full w-full rounded-full object-cover bg-slate-800"
+            />
           </div>
           <span className="font-extrabold tracking-tight">
             {personalInfo.shortName}
